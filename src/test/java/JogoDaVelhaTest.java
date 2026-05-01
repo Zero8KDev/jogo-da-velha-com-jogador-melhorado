@@ -6,7 +6,7 @@ public class JogoDaVelhaTest {
 
     @Test
     void verificarJogador() {
-        Jogador jogador = new Jogador('X', "Teste");
+        JogadorHumano jogador = new JogadorHumano('X', "Teste");
         assertEquals('X', jogador.getSimbolo());
     }
 

@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 class JogoDaVelha {
 
-    private Jogador jogador1;
-    private Jogador jogador2;
+    private JogadorHumano jogador1;
+    private JogadorMaquina jogador2;
     private Tabuleiro tabuleiro;
 
-    public JogoDaVelha(Jogador jogador1, Jogador jogador2, Tabuleiro tabuleiro) {
+    public JogoDaVelha(JogadorHumano jogador1, JogadorMaquina jogador2, Tabuleiro tabuleiro) {
         this.jogador1 = jogador1;
         this.jogador2 = jogador2;
         this.tabuleiro = tabuleiro;
@@ -22,8 +22,8 @@ class JogoDaVelha {
 
         char simboloMaquina = (simboloHumano == 'X') ? 'O' : 'X';
 
-        Jogador jogador1 = new Jogador(simboloHumano, "Humano");
-        Jogador jogador2 = new Jogador(simboloMaquina, "Máquina");
+        JogadorHumano jogador1 = new JogadorHumano(simboloHumano, "Humano");
+        JogadorMaquina jogador2 = new JogadorMaquina(simboloMaquina, "Máquina");
 
         Tabuleiro tabuleiro = new Tabuleiro();
 

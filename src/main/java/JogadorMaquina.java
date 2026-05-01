@@ -1,8 +1,8 @@
-public class Jogador { 
+public class JogadorMaquina { 
     private char simbolo;
     private String nome;
 
-    public Jogador(char simbolo, String nome) {
+    public JogadorMaquina(char simbolo, String nome) {
         this.simbolo = simbolo;
         this.nome = nome;
     }
