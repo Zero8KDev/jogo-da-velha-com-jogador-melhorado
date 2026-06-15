@@ -1,17 +1,21 @@
-public class JogadorHumano { 
-    private char simbolo;
-    private String nome;
+import java.util.Scanner;
+
+public class JogadorHumano extends Jogador {
+
+    private Scanner scanner = new Scanner(System.in);
 
     public JogadorHumano(char simbolo, String nome) {
-        this.simbolo = simbolo;
-        this.nome = nome;
+        super(simbolo, nome);
     }
 
-    public char getSimbolo() {
-        return this.simbolo;
-    }
+    @Override
+    public int[] jogar(Tabuleiro tabuleiro) {
+        System.out.print("Linha: ");
+        int linha = scanner.nextInt();
 
-    public String getNome() {
-        return this.nome;
+        System.out.print("Coluna: ");
+        int coluna = scanner.nextInt();
+
+        return new int[]{linha, coluna};
     }
 }

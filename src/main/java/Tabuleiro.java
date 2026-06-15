@@ -64,4 +64,7 @@ class Tabuleiro {
             System.out.println();
         }
     }
+    public boolean posicaoLivre(int linha, int coluna) {
+    return casas[linha][coluna] == ' ';
+    }   
 }
